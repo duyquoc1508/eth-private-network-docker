@@ -38,7 +38,8 @@ services:
     container_name: netstats
     environment:
       - WS_SECRET=eth-net-stats-secret
+      - PORT=3001
     volumes:
       - /etc/localtime:/etc/localtime:ro
     ports:
-      - "3000:3000"
+      - "3001:3001"
